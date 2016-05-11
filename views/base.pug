@@ -1,0 +1,17 @@
+html
+  head
+    block title
+      title
+    link(rel='stylesheet', href='/css/app.css')
+    block extra_styles
+    block extra_scripts_head
+    //- Live reload
+    script.
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+      ':35729/livereload.js?snipver=1"></' + 'script>')
+  body
+    include ./common/_navbar.pug
+    .container-fluid
+      block body
+    include ./common/_footer.pug
+    block extra_scripts_tail

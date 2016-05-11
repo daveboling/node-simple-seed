@@ -1,0 +1,15 @@
+@import './_app.variables.scss';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+html, body {
+  height: 100%;
+  color: $primary-color;
+}
+
+ul {
+  &.nav {
+    li {
+      display: inline-block;
+    }
+  }
+}
